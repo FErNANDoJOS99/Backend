@@ -57,7 +57,7 @@ public class Almacen {
     public void deleteCategory(Integer id){
         System.out.println("entro almenos al metodo ");
         for (Category cat : categories) {
-            if(cat.getCategoryId()==id){
+            if(cat.getcategory_id()==id){
                 System.err.println("es igual");
                 cat.changeStatus();
             }
