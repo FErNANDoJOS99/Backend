@@ -7,6 +7,7 @@ import com.product.api.service.SvcCategoryImp;
 import com.product.common.dto.ApiResponse;
 import com.product.exception.ApiException;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 
 import java.util.List;
@@ -30,6 +31,7 @@ import org.springframework.web.bind.annotation.RestController;
 //http://localhost:8080/category
 @RestController
 @RequestMapping("/category")
+@Tag(name = "Category", description = "Catálogo de categorias")
 
 //Le cambie el nombre de CtrlProduct a CtrlCategory
 public class CtrlCategory {
